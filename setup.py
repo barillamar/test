@@ -9,7 +9,6 @@ setup(
     author_email='your@email.com',
     install_requires=[
         'pybaseball',
-        'statsapi',
         'matplotlib'
     ],
 )
