@@ -1,27 +1,27 @@
 def fetch_gamepks(date=None):
-  """
-    Fetches gamepks for the specified date.
-
-    Parameters:
-    - date (str, optional): The date for which gamepks are to be fetched.
-      Should be in the format 'YYYY-MM-DD'. If not provided, defaults to today's date.
-
-    Returns:
-    - list: List of gamepks scheduled for the specified date.
-
-    Raises:
-    - ValueError: If no gamepks are found for the specified date.
     """
-
-  if date is None:
-    date = datetime.date.today()
-
-  gamepks = mlb.get_scheduled_games_by_date(date=date)
-
-  if not gamepks:
-    raise ValueError('No gamepks found for the specified date.')
-
-  return gamepks
+      Fetches gamepks for the specified date.
+  
+      Parameters:
+      - date (str, optional): The date for which gamepks are to be fetched.
+        Should be in the format 'YYYY-MM-DD'. If not provided, defaults to today's date.
+  
+      Returns:
+      - list: List of gamepks scheduled for the specified date.
+  
+      Raises:
+      - ValueError: If no gamepks are found for the specified date.
+      """
+  
+    if date is None:
+      date = datetime.date.today()
+  
+    gamepks = mlb.get_scheduled_games_by_date(date=date)
+  
+    if not gamepks:
+      raise ValueError('No gamepks found for the specified date.')
+  
+    return gamepks
 
 def get_batting_order_of_game(gamepk, team='away'):
     """
@@ -43,7 +43,7 @@ def get_batting_order_of_game(gamepk, team='away'):
         print(f"Error in get_batting_order_of_game: {e}")
         return None
 
-  def convert_names_to_mlb_ids(names=[]):
+def convert_names_to_mlb_ids(names=[]):
     """
     Convert a list of player names to their corresponding MLB IDs.
 
