@@ -8,7 +8,15 @@ setup(
     author='Your Name',
     author_email='your@email.com',
     install_requires=[
+        'python-mlb-statsapi',
+        'MLB-StatsAPI',
         'pybaseball',
-        'matplotlib'
+        'pandas',
+        'numpy',
+        'seaborn',
+        'matplotlib',
+        'mlbstatsapi'
+        #'pybaseball',
+        #'matplotlib'
     ],
 )
