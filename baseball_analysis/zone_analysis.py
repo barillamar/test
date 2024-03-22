@@ -1,3 +1,5 @@
+mlb = mlbstatsapi.Mlb
+
 def fetch_gamepks(date=None):
     """
       Fetches gamepks for the specified date.
