@@ -15,8 +15,5 @@ setup(
         'numpy',
         'seaborn',
         'matplotlib',
-        'mlbstatsapi'
-        #'pybaseball',
-        #'matplotlib'
     ],
 )
