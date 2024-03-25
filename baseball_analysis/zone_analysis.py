@@ -1,5 +1,6 @@
 import mlbstatsapi
 import pybaseball
+import statsapi
 
 mlb = mlbstatsapi.Mlb()
 
