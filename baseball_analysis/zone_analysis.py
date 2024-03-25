@@ -4,8 +4,9 @@ import statsapi
 
 #from baseball_analysis.data_fetch import convert_id_to_mlb_id
 from .data_fetch import get_last_n_gamepks_of_lineup
-from baseball_analysis.data_fetch import remap_zone_for_pitchers_pov
-from baseball_analysis.data_fetch import remap_zone_number_to_coordinates
+from .data_fetch import remap_zone_for_pitchers_pov
+from .data_fetch import remap_zone_number_to_coordinates
+from .visualization import visualize_strike_zone
 
 mlb = mlbstatsapi.Mlb()
 
