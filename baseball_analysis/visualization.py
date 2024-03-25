@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+from .data_fetch import convert_id_to_mlb_id
+
 def visualize_strike_zone(player_data):
   converted_player_data = convert_id_to_mlb_id(player_data)
   for batter, metrics in converted_player_data.items():
