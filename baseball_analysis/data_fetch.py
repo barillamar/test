@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 
 #import pybaseball
 
-mlb = mlbstatsapi.Mlb
+mlb = mlbstatsapi.Mlb()
 
 def convert_id_to_mlb_id(player_data):
   converted_data = {}
