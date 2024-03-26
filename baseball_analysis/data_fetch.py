@@ -1,16 +1,7 @@
-#!pip install python-mlb-statsapi
-#!pip install MLB-StatsAPI
-#!pip install pybaseball
-
-#import pandas as pd
-#import numpy as np
 import datetime
-#import seaborn as sns
-#import matplotlib.pyplot as plt
 import mlbstatsapi
 import statsapi
 from datetime import datetime, timedelta
-
 import pybaseball
 
 mlb = mlbstatsapi.Mlb()
